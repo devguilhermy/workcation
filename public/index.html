@@ -34,5 +34,13 @@
                 >
             </div>
         </div>
+        <p id="width"></p>
+        <script>
+            function setWidth() {
+                document.getElementById("width").innerText = window.outerWidth;
+            }
+            setWidth();
+            window.addEventListener("resize", setWidth);
+        </script>
     </body>
 </html>
