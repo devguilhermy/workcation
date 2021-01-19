@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import Destinations from "./Destinations";
+import Banner from "./components/Banner";
+import Destinations from "./components/Destinations";
 
 function App() {
     return (
