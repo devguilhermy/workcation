@@ -10,7 +10,7 @@
 }
 
 .btn-gray {
-    @apply btn bg-gray-400 hover:bg-gray-400 active:bg-gray-600 text-gray-900;
+    @apply btn bg-gray-400 hover:bg-gray-300 active:bg-gray-500 text-gray-900;
 }
 
 @tailwind utilities;

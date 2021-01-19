@@ -10,19 +10,21 @@ function Banner() {
                     />
 
                     <img
-                        class="mt-6 rounded-lg shadow-lg sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden"
+                        class="mt-6 rounded-lg shadow-lg sm:mt-8 sm:h-80 sm:w-full sm:object-cover sm:object-center lg:hidden"
                         src="img/workcationing.jpg"
                         alt="Man workcationing on the beach"
                     />
                     <h1 class="mt-6 text-2xl font-bold text-gray-800 leading-tight sm:mt-8 sm:text-3xl lg:text-3xl xl:text-4xl">
                         You can work from anywhere.
-                        <br class="hidden sm:inline" />
-                        <span class="text-blue-600">Take advantage of it.</span>
+                        <br />
+                        <span class="text-brand-blue">
+                            Take advantage of it.
+                        </span>
                     </h1>
                     <p class="mt-2 text-gray-600 font-medium sm:mt-4 sm:text-xl">
-                        <span id="width"></span>&nbsp; Workcation helps you find
-                        work places work-friendly places so you can relax but
-                        keep working on what's important
+                        Workcation helps you find work places work-friendly
+                        places so you can relax but keep working on what's
+                        important
                     </p>
                     <div class="mt-6">
                         <a class="btn-blue shadow-lg sm:text-base" href="#">
