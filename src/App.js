@@ -1,12 +1,15 @@
-import Banner from "./components/Banner";
-import Destinations from "./components/Destinations";
+import Home from "./pages/Home";
+import PropertyCard from "./components/PropertyCard";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
     return (
-        <>
-            <Banner />
-            <Destinations />
-        </>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" component={Home} exact />
+                <Route path="/property" component={PropertyCard} />
+            </Switch>
+        </BrowserRouter>
     );
 }
 
