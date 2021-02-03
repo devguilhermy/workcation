@@ -39,10 +39,10 @@ function PropertyCard() {
                 />
                 <div className="p-6">
                     <div className="flex items-baseline">
-                        <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-700  font-bold uppercase tracking-wider">
+                        <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-600  font-bold uppercase tracking-wider">
                             Exclusive
                         </span>
-                        <span className="ml-2 px-2 py-0.5 rounded-full bg-lime-200 text-xs  text-lime-700 font-bold uppercase tracking-wider">
+                        <span className="ml-2 px-2 py-0.5 rounded-full bg-lime-200 text-xs  text-lime-600 font-bold uppercase tracking-wider">
                             New
                         </span>
                         <div className="ml-4 text-xs text-gray-500 tracking-wider font-semibold uppercase">
