@@ -1,0 +1,43 @@
+import Header from "../components/Header";
+import PropertyCard from "../components/PropertyCard";
+
+export default function PropertyList() {
+    const properties = [
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+            imageAlt: "Beautiful house",
+            beds: 3,
+            baths: 2,
+            title: "Modern home in the city center",
+            price: 190000,
+            formattedPrice: "1,900.00",
+            reviewCount: 34,
+            rating: 4,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Cool apartment downtown",
+            price: 250000,
+            formattedPrice: "2,500.00",
+            reviewCount: 52,
+            rating: 5,
+        },
+    ];
+
+    return (
+        <>
+            <Header />
+            <div class="p-10 flex">
+                {properties.map((property) => {
+                    return <PropertyCard info={property} />;
+                    console.log(property);
+                })}
+            </div>
+        </>
+    );
+}

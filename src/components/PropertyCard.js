@@ -1,24 +1,11 @@
-function PropertyCard() {
-    const data = {
-        imageUrl:
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        imageAlt: "Beautiful house",
-        beds: 3,
-        baths: 2,
-        title: "Modern home in the city center",
-        price: 190000,
-        formattedPrice: "1,900.00",
-        reviewCount: 34,
-        rating: 4,
-    };
-
+export default function PropertyCard({ info }) {
     const stars = [];
 
     for (let i = 1; i < 6; i++) {
         stars.push(
             <svg
                 className={`h-6 w-6 fill-current ${
-                    i <= data.rating ? "text-teal-500" : "text-gray-300"
+                    i <= info.rating ? "text-teal-500" : "text-gray-300"
                 }`}
                 key={i}
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,49 +17,45 @@ function PropertyCard() {
     }
 
     return (
-        <div className="bg-gray-50 p-10">
-            <div className="max-w-md">
-                <div class="relative pb-3/4">
-                    <img
-                        className="absolute w-full h-full object-cover rounded-lg shadow-md"
-                        src={data.imageUrl}
-                        alt={data.imageAlt}
-                    />
-                </div>
-                <div class="relative -mt-20 px-6">
-                    <div className="p-6 bg-white rounded-lg shadow-xl ">
-                        <div className="flex items-baseline">
-                            <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-600  font-bold uppercase tracking-wider">
-                                Exclusive
-                            </span>
-                            <span className="ml-2 px-2 py-0.5 rounded-full bg-lime-200 text-xs  text-lime-600 font-bold uppercase tracking-wider">
-                                New
-                            </span>
-                            <div className="ml-4 text-xs text-gray-500 tracking-wider font-semibold uppercase">
-                                {data.beds} beds &bull; {data.baths} baths
-                            </div>
+        <div className="mt-4 max-w-md">
+            <div class="relative pb-3/4">
+                <img
+                    className="absolute w-full h-full object-cover rounded-lg shadow-md"
+                    src={info.imageUrl}
+                    alt={info.imageAlt}
+                />
+            </div>
+            <div class="relative -mt-20 px-6">
+                <div className="p-6 bg-white rounded-lg shadow-xl ">
+                    <div className="flex items-baseline">
+                        <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-600  font-bold uppercase tracking-wider">
+                            Exclusive
+                        </span>
+                        <span className="ml-2 px-2 py-0.5 rounded-full bg-lime-200 text-xs  text-lime-600 font-bold uppercase tracking-wider">
+                            New
+                        </span>
+                        <div className="ml-4 text-xs text-gray-500 tracking-wider font-semibold uppercase">
+                            {info.beds} beds &bull; {info.baths} baths
                         </div>
-                        <h4 className="mt-2 text-xl font-bold leading-tight tracking-tight">
-                            {data.title}
-                        </h4>
-                        <div className="mt-1 text-gray-600 ">
-                            <span class="font-semibold text-lg">
-                                ${data.formattedPrice}
-                            </span>{" "}
-                            <span class="text-gray-500 text-sm">/ week</span>
-                        </div>
-                        <div className="mt-2 text-gray-600 flex items-center">
-                            {stars}
-                            &nbsp;
-                            <span class="ml-2 text-gray-500 text-sm">
-                                {data.reviewCount} reviews
-                            </span>
-                        </div>
+                    </div>
+                    <h4 className="mt-2 text-xl font-bold leading-tight tracking-tight">
+                        {info.title}
+                    </h4>
+                    <div className="mt-1 text-gray-600 ">
+                        <span class="font-semibold text-lg">
+                            ${info.formattedPrice}
+                        </span>{" "}
+                        <span class="text-gray-500 text-sm">/ week</span>
+                    </div>
+                    <div className="mt-2 text-gray-600 flex items-center">
+                        {stars}
+                        &nbsp;
+                        <span class="ml-2 text-gray-500 text-sm">
+                            {info.reviewCount} reviews
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-
-export default PropertyCard;

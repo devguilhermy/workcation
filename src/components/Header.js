@@ -10,11 +10,11 @@ export default function Header() {
         { name: "Sign out", href: "#" },
     ];
 
-    const [openMenu, setOpenMenu] = useState(true);
+    const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <header className="bg-gray-100 ">
-            <div className="flex items-center justify-between px-5 py-3 bg-gray-100 ">
+        <header className="bg-gray-200 ">
+            <div className="flex items-center justify-between px-5 py-3 ">
                 <div className="">
                     <img
                         class="h-10"

@@ -15,7 +15,7 @@ function DestinationCard(props) {
                 </p>
                 <div className="mt-4">
                     <a
-                        href="#"
+                        href="/properties"
                         className="text-indigo-500 hover:text-indigo-400 font-semibold text-sm"
                     >
                         Explore {props.data.propertyCount} properties
