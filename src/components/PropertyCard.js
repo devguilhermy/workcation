@@ -31,12 +31,14 @@ function PropertyCard() {
 
     return (
         <div className="bg-gray-100 h-full w-full absolute">
-            <div className="bg-white m-10 rounded-lg shadow-lg border overflow-hidden max-w-sm">
-                <img
-                    className="w-full h-full"
-                    src={data.imageUrl}
-                    alt={data.imageAlt}
-                />
+            <div className=" bg-white m-10 max-w-md rounded-lg shadow-lg border overflow-hidden">
+                <div class="relative bg-fuchsia-500 pb-2/3">
+                    <img
+                        className="absolute w-full h-full object-cover"
+                        src={data.imageUrl}
+                        alt={data.imageAlt}
+                    />
+                </div>
                 <div className="p-6">
                     <div className="flex items-baseline">
                         <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-600  font-bold uppercase tracking-wider">
