@@ -30,42 +30,44 @@ function PropertyCard() {
     }
 
     return (
-        <div className="bg-gray-100 h-full w-full absolute">
-            <div className=" bg-white m-10 max-w-md rounded-lg shadow-lg border overflow-hidden">
-                <div class="relative bg-fuchsia-500 pb-2/3">
+        <div className="bg-gray-50 p-10">
+            <div className="max-w-md">
+                <div class="relative pb-3/4">
                     <img
-                        className="absolute w-full h-full object-cover"
+                        className="absolute w-full h-full object-cover rounded-lg shadow-md"
                         src={data.imageUrl}
                         alt={data.imageAlt}
                     />
                 </div>
-                <div className="p-6">
-                    <div className="flex items-baseline">
-                        <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-600  font-bold uppercase tracking-wider">
-                            Exclusive
-                        </span>
-                        <span className="ml-2 px-2 py-0.5 rounded-full bg-lime-200 text-xs  text-lime-600 font-bold uppercase tracking-wider">
-                            New
-                        </span>
-                        <div className="ml-4 text-xs text-gray-500 tracking-wider font-semibold uppercase">
-                            {data.beds} beds &bull; {data.baths} baths
+                <div class="relative -mt-20 px-6">
+                    <div className="p-6 bg-white rounded-lg shadow-lg ">
+                        <div className="flex items-baseline">
+                            <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-600  font-bold uppercase tracking-wider">
+                                Exclusive
+                            </span>
+                            <span className="ml-2 px-2 py-0.5 rounded-full bg-lime-200 text-xs  text-lime-600 font-bold uppercase tracking-wider">
+                                New
+                            </span>
+                            <div className="ml-4 text-xs text-gray-500 tracking-wider font-semibold uppercase">
+                                {data.beds} beds &bull; {data.baths} baths
+                            </div>
                         </div>
-                    </div>
-                    <h4 className="mt-2 text-xl font-bold leading-tight">
-                        {data.title}
-                    </h4>
-                    <div className="mt-2 text-gray-600 ">
-                        <span class="font-semibold text-lg">
-                            ${data.formattedPrice}
-                        </span>{" "}
-                        <span class="text-gray-500 text-sm">/ week</span>
-                    </div>
-                    <div className="mt-2 text-gray-600 flex items-center">
-                        {stars}
-                        &nbsp;
-                        <span class="ml-2 text-gray-500 text-sm">
-                            {data.reviewCount} reviews
-                        </span>
+                        <h4 className="mt-2 text-xl font-bold leading-tight tracking-tight">
+                            {data.title}
+                        </h4>
+                        <div className="mt-1 text-gray-600 ">
+                            <span class="font-semibold text-lg">
+                                ${data.formattedPrice}
+                            </span>{" "}
+                            <span class="text-gray-500 text-sm">/ week</span>
+                        </div>
+                        <div className="mt-2 text-gray-600 flex items-center">
+                            {stars}
+                            &nbsp;
+                            <span class="ml-2 text-gray-500 text-sm">
+                                {data.reviewCount} reviews
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
