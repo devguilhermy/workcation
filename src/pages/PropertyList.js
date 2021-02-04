@@ -27,12 +27,168 @@ export default function PropertyList() {
             reviewCount: 52,
             rating: 5,
         },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
+        {
+            imageUrl:
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
+            imageAlt: "Apartment",
+            beds: 2,
+            baths: 1,
+            title: "Quiet studio near the park",
+            price: 120000,
+            formattedPrice: "1,900.00",
+            reviewCount: 12,
+            rating: 3,
+        },
     ];
 
     return (
         <>
             <Header />
-            <div class="p-10 flex justify-between">
+            <div class="p-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5 xl:gap-10">
                 {properties.map((property) => {
                     return <PropertyCard info={property} />;
                 })}

@@ -17,7 +17,7 @@ export default function PropertyCard({ info }) {
     }
 
     return (
-        <div className="">
+        <div className="sm:w-128 md:w-96 lg:w-72 xl:w-64 2xl:48 overflow-hidden">
             <div class="relative pb-3/4">
                 <img
                     className="absolute w-full h-full object-cover rounded-lg shadow-md"
@@ -34,9 +34,9 @@ export default function PropertyCard({ info }) {
                         <span className="ml-2 px-2 py-0.5 rounded-full bg-lime-200 text-xs  text-lime-600 font-bold uppercase tracking-wider">
                             New
                         </span>
-                        <div className="ml-4 text-xs text-gray-500 tracking-wider font-semibold uppercase">
-                            {info.beds} beds &bull; {info.baths} baths
-                        </div>
+                    </div>
+                    <div className="mt-2 text-xs text-gray-500 tracking-wider font-semibold uppercase">
+                        {info.beds} beds &bull; {info.baths} baths
                     </div>
                     <h4 className="mt-2 text-xl font-bold leading-tight tracking-tight">
                         {info.title}
@@ -50,7 +50,7 @@ export default function PropertyCard({ info }) {
                     <div className="mt-2 text-gray-600 flex items-center">
                         {stars}
                         &nbsp;
-                        <span class="ml-2 text-gray-500 text-sm">
+                        <span class="ml-2 text-gray-500 text-sm leading-none">
                             {info.reviewCount} reviews
                         </span>
                     </div>
