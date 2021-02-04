@@ -17,7 +17,7 @@ export default function PropertyCard({ info }) {
     }
 
     return (
-        <div className="mt-4 max-w-md">
+        <div className="">
             <div class="relative pb-3/4">
                 <img
                     className="absolute w-full h-full object-cover rounded-lg shadow-md"
@@ -26,7 +26,7 @@ export default function PropertyCard({ info }) {
                 />
             </div>
             <div class="relative -mt-20 px-6">
-                <div className="p-6 bg-white rounded-lg shadow-xl ">
+                <div className="p-6  bg-white rounded-lg shadow-xl">
                     <div className="flex items-baseline">
                         <span className="px-2 py-0.5 rounded-full bg-teal-200 text-xs  text-teal-600  font-bold uppercase tracking-wider">
                             Exclusive

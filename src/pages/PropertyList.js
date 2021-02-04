@@ -5,7 +5,7 @@ export default function PropertyList() {
     const properties = [
         {
             imageUrl:
-                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
             imageAlt: "Beautiful house",
             beds: 3,
             baths: 2,
@@ -17,7 +17,7 @@ export default function PropertyList() {
         },
         {
             imageUrl:
-                "https://images.unsplash.com/photo-1515263487990-61b07816b324?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+                "https://images.unsplash.com/photo-1515263487990-61b07816b324",
             imageAlt: "Apartment",
             beds: 2,
             baths: 1,
@@ -32,10 +32,9 @@ export default function PropertyList() {
     return (
         <>
             <Header />
-            <div class="p-10 flex">
+            <div class="p-10 flex justify-between">
                 {properties.map((property) => {
                     return <PropertyCard info={property} />;
-                    console.log(property);
                 })}
             </div>
         </>
