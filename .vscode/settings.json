@@ -1,5 +1,9 @@
 {
 	"cSpell.words": [
 		"semibold"
-	]
+	],
+	"files.exclude": {
+		"**/.vscode": true,
+		"**/node_modules": true
+	}
 }
