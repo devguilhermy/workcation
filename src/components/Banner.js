@@ -1,6 +1,6 @@
 function Banner() {
     return (
-        <div class="flex bg-gray-100">
+        <div class="flex">
             <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-10">
                 <div class="xl:max-w-lg xl:ml-auto">
                     <img
