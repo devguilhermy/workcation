@@ -11,7 +11,7 @@ export default function Header() {
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <header className="bg-gray-200 sm:flex sm:justify-between sm:items-center sm:px-10 sm:py-3">
+        <header className="bg-gray-300 bg-opacity-95 shadow-xl sm:flex sm:justify-between sm:items-center sm:px-10 sm:py-3 z-10">
             <div className="flex items-center justify-between px-10 py-3 sm:p-0">
                 <div className="">
                     <img
@@ -29,7 +29,7 @@ export default function Header() {
                         }}
                     >
                         <svg
-                            className="h-8 w-8 fill-curren"
+                            className="h-8 w-8 fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             stroke="currentColor"

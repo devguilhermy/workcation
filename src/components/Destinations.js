@@ -52,22 +52,24 @@ function Destinations() {
         },
     ];
     return (
-        <div class="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
-            <h2 class="text-2xl text-gray-900 font-bold">
-                Popular destinations
-            </h2>
-            <p class="text-gray-600">
-                A selection of great work-friendly cities with lots to see and
-                explore
-            </p>
-            <div className="flex flex-wrap -mx-4">
-                {locations.map((location) => {
-                    return (
-                        <div className="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3">
-                            <DestinationCard data={location} />
-                        </div>
-                    );
-                })}
+        <div class="bg-gray-100">
+            <div class="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
+                <h2 class="text-2xl text-gray-900 font-bold">
+                    Popular destinations
+                </h2>
+                <p class="text-gray-600">
+                    A selection of great work-friendly cities with lots to see
+                    and explore
+                </p>
+                <div className="flex flex-wrap -mx-4">
+                    {locations.map((location) => {
+                        return (
+                            <div className="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3">
+                                <DestinationCard data={location} />
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </div>
     );
