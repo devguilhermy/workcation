@@ -31,7 +31,7 @@ export default function ProfileDropdown() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div class="p-3 w-48">
+        <div class="p-3 w-56">
             <button
                 className="block w-12 h-12 rounded-full overflow-hidden border-2 border-gray-400 focus:outline-none focus:border-4 focus:border-indigo-500"
                 onClick={() => {
