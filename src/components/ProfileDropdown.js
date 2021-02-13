@@ -1,5 +1,5 @@
 import { useState } from "react";
-export default function ProfileDropdown() {
+export default function ProfileDropdown({ className }) {
     const links = [
         {
             name: "Hires",
@@ -28,10 +28,10 @@ export default function ProfileDropdown() {
         },
     ];
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
-        <div class="p-3 w-56">
+        <div className={`relative ${className}`}>
             <button
                 className="block w-12 h-12 rounded-full overflow-hidden border-2 border-gray-400 focus:outline-none focus:border-4 focus:border-indigo-500"
                 onClick={() => {
@@ -45,8 +45,8 @@ export default function ProfileDropdown() {
                 />
             </button>
             <div
-                class={`mt-2 bg-white py-2 rounded-lg shadow-lg ${
-                    isOpen ? "block" : "hidden"
+                class={`absolute right-0 mt-2 w-56 bg-white py-2 rounded-lg shadow-lg ${
+                    isOpen ? "" : "hidden"
                 }`}
             >
                 {links.map((link) => {

@@ -1,18 +1,18 @@
 import { useState } from "react";
+import ProfileDropdown from "./ProfileDropdown";
 
 export default function Header() {
     const links = [
         { name: "Home", icon: "", href: "#" },
         { name: "Cities", icon: "", href: "#" },
         { name: "Help", icon: "", href: "#" },
-        { name: "Profile", icon: "", href: "#" },
     ];
 
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <header className="bg-gray-300 bg-opacity-95 shadow-xl sm:flex sm:justify-between sm:items-center sm:px-10 sm:py-3 z-10">
-            <div className="flex items-center justify-between px-10 py-3 sm:p-0">
+        <header className="relative bg-gray-300 shadow-md sm:flex sm:justify-between sm:items-center sm:px-10 sm:py-3 z-10">
+            <div className="flex items-center justify-between px-5 py-3 sm:p-0">
                 <div className="">
                     <img
                         class="h-10"
@@ -61,12 +61,13 @@ export default function Header() {
                     return (
                         <a
                             href={link.href}
-                            className="mt-4 mx-auto block px-2 py-2 text-2xl rounded-full w-1/3 font-semibold text-gray-600  transition-all hover:text-gray-900 hover:bg-gray-300 focus:text-gray-900 focus:bg-gray-300 leading-none sm:ml-4 sm:mt-0 sm:text-xl"
+                            className="mt-4 mx-auto block px-2 py-2 text-2xl rounded-full w-1/3 font-semibold text-gray-600  transition-all hover:text-gray-900 hover:bg-gray-400 focus:text-gray-900 focus:bg-gray-400 leading-none sm:ml-4 sm:mt-0 sm:text-xl"
                         >
                             {link.name}
                         </a>
                     );
                 })}
+                <ProfileDropdown className="ml-5" />
             </div>
         </header>
     );
