@@ -1,5 +1,5 @@
 {
-    "name": "react-tailwind-template",
+    "name": "workcation",
     "version": "0.1.0",
     "private": false,
     "dependencies": {
@@ -41,23 +41,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "description": "Project template for React.js + TailwindCSS",
-    "main": "src/index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/devguilhermy/react-tailwind-template.git"
-    },
-    "keywords": [
-        "react",
-        "reactjs",
-        "tailwindcss",
-        "template"
-    ],
-    "author": "devguilhermy",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/devguilhermy/react-tailwind-template/issues"
-    },
-    "homepage": "https://github.com/devguilhermy/react-tailwind-template#readme"
+    }
 }
