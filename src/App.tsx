@@ -1,7 +1,7 @@
-import { FiFilter, FiMenu, FiSearch } from 'react-icons/fi';
-import { BsFillStarFill } from 'react-icons/bs';
+import { FiFilter, FiSearch } from 'react-icons/fi';
 
-import logoImg from './assets/img/logo.svg';
+import { BsFillStarFill } from 'react-icons/bs';
+import Header from './components/Header';
 
 export default function App() {
     // const [rentalList] = useState([
@@ -94,19 +94,8 @@ export default function App() {
 
     return (
         <div className="min-h-screen antialiased bg-gray-200">
-            <header className="flex items-center justify-between px-4 py-3 text-white bg-gray-900">
-                <div>
-                    <img src={logoImg} alt="Logo" className="w-auto h-8" />
-                </div>
-                <button
-                    type="button"
-                    className="text-gray-400"
-                    aria-label="Menu"
-                >
-                    <FiMenu className="w-6 h-6" />
-                </button>
-            </header>
-            <section className="flex justify-between px-4 py-3 bg-gray-800">
+            <Header />
+            <section className="flex justify-between p-5 bg-gray-800">
                 <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                         <FiSearch className="w-6 h-6 text-gray-600" />
@@ -124,7 +113,7 @@ export default function App() {
             </section>
             <main className="px-4 py-6">
                 <h2 className="hidden">Search results</h2>
-                <h3 className="text-xl font-semibold text-gray-600">
+                <h3 className="text-xl font-semibold text-gray-800">
                     Los Angeles
                 </h3>
                 <p className="text-gray-600">
@@ -140,7 +129,7 @@ export default function App() {
                         />
                         <div className="px-4">
                             <div className="relative px-4 py-3 -mt-10 bg-white rounded-lg shadow-lg">
-                                <p className="flex items-center text-sm font-semibold tracking-wide">
+                                <p className="flex items-center text-xs font-semibold tracking-wide">
                                     <span className="inline-block px-2.5 text-blue-800 uppercase bg-blue-300 rounded-full">
                                         plus
                                     </span>
