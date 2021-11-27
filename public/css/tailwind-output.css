@@ -21843,6 +21843,10 @@ select {
   padding: 0.875rem;
 }
 
+.p-5\/6 {
+  padding: 83.333333%;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -22016,6 +22020,11 @@ select {
 .px-3\.5 {
   padding-left: 0.875rem;
   padding-right: 0.875rem;
+}
+
+.px-5\/6 {
+  padding-left: 83.333333%;
+  padding-right: 83.333333%;
 }
 
 .py-0 {
@@ -22193,6 +22202,11 @@ select {
   padding-bottom: 0.875rem;
 }
 
+.py-5\/6 {
+  padding-top: 83.333333%;
+  padding-bottom: 83.333333%;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
@@ -22331,6 +22345,10 @@ select {
 
 .pt-3\.5 {
   padding-top: 0.875rem;
+}
+
+.pt-5\/6 {
+  padding-top: 83.333333%;
 }
 
 .pr-0 {
@@ -22473,6 +22491,10 @@ select {
   padding-right: 0.875rem;
 }
 
+.pr-5\/6 {
+  padding-right: 83.333333%;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -22613,6 +22635,10 @@ select {
   padding-bottom: 0.875rem;
 }
 
+.pb-5\/6 {
+  padding-bottom: 83.333333%;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -22751,6 +22777,10 @@ select {
 
 .pl-3\.5 {
   padding-left: 0.875rem;
+}
+
+.pl-5\/6 {
+  padding-left: 83.333333%;
 }
 
 .text-left {
@@ -51925,6 +51955,10 @@ select {
     padding: 0.875rem;
   }
 
+  .sm\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -52098,6 +52132,11 @@ select {
   .sm\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .sm\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .sm\:py-0 {
@@ -52275,6 +52314,11 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .sm\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -52413,6 +52457,10 @@ select {
 
   .sm\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .sm\:pt-5\/6 {
+    padding-top: 83.333333%;
   }
 
   .sm\:pr-0 {
@@ -52555,6 +52603,10 @@ select {
     padding-right: 0.875rem;
   }
 
+  .sm\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -52695,6 +52747,10 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .sm\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
   .sm\:pl-0 {
     padding-left: 0px;
   }
@@ -52833,6 +52889,10 @@ select {
 
   .sm\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .sm\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .sm\:text-left {
@@ -81995,6 +82055,10 @@ select {
     padding: 0.875rem;
   }
 
+  .md\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -82168,6 +82232,11 @@ select {
   .md\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .md\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .md\:py-0 {
@@ -82345,6 +82414,11 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .md\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
@@ -82483,6 +82557,10 @@ select {
 
   .md\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .md\:pt-5\/6 {
+    padding-top: 83.333333%;
   }
 
   .md\:pr-0 {
@@ -82625,6 +82703,10 @@ select {
     padding-right: 0.875rem;
   }
 
+  .md\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -82765,6 +82847,10 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .md\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
   .md\:pl-0 {
     padding-left: 0px;
   }
@@ -82903,6 +82989,10 @@ select {
 
   .md\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .md\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .md\:text-left {
@@ -112065,6 +112155,10 @@ select {
     padding: 0.875rem;
   }
 
+  .lg\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -112238,6 +112332,11 @@ select {
   .lg\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .lg\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .lg\:py-0 {
@@ -112415,6 +112514,11 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .lg\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -112553,6 +112657,10 @@ select {
 
   .lg\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .lg\:pt-5\/6 {
+    padding-top: 83.333333%;
   }
 
   .lg\:pr-0 {
@@ -112695,6 +112803,10 @@ select {
     padding-right: 0.875rem;
   }
 
+  .lg\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -112835,6 +112947,10 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .lg\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
   .lg\:pl-0 {
     padding-left: 0px;
   }
@@ -112973,6 +113089,10 @@ select {
 
   .lg\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .lg\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .lg\:text-left {
@@ -142135,6 +142255,10 @@ select {
     padding: 0.875rem;
   }
 
+  .xl\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -142308,6 +142432,11 @@ select {
   .xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .xl\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .xl\:py-0 {
@@ -142485,6 +142614,11 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .xl\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
   .xl\:pt-0 {
     padding-top: 0px;
   }
@@ -142623,6 +142757,10 @@ select {
 
   .xl\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .xl\:pt-5\/6 {
+    padding-top: 83.333333%;
   }
 
   .xl\:pr-0 {
@@ -142765,6 +142903,10 @@ select {
     padding-right: 0.875rem;
   }
 
+  .xl\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
   .xl\:pb-0 {
     padding-bottom: 0px;
   }
@@ -142905,6 +143047,10 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .xl\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
   .xl\:pl-0 {
     padding-left: 0px;
   }
@@ -143043,6 +143189,10 @@ select {
 
   .xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .xl\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .xl\:text-left {
@@ -172205,6 +172355,10 @@ select {
     padding: 0.875rem;
   }
 
+  .\32xl\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .\32xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -172378,6 +172532,11 @@ select {
   .\32xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .\32xl\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .\32xl\:py-0 {
@@ -172555,6 +172714,11 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .\32xl\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
   .\32xl\:pt-0 {
     padding-top: 0px;
   }
@@ -172693,6 +172857,10 @@ select {
 
   .\32xl\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .\32xl\:pt-5\/6 {
+    padding-top: 83.333333%;
   }
 
   .\32xl\:pr-0 {
@@ -172835,6 +173003,10 @@ select {
     padding-right: 0.875rem;
   }
 
+  .\32xl\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
   .\32xl\:pb-0 {
     padding-bottom: 0px;
   }
@@ -172975,6 +173147,10 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .\32xl\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
   .\32xl\:pl-0 {
     padding-left: 0px;
   }
@@ -173113,6 +173289,10 @@ select {
 
   .\32xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .\32xl\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .\32xl\:text-left {
