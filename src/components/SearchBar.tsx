@@ -3,7 +3,7 @@ import { FiFilter, FiSearch } from 'react-icons/fi';
 import { useState } from 'react';
 
 export default function SearchBar() {
-    const [isFiltersMenuOpen, setIsFiltersMenuOpen] = useState(true);
+    const [isFiltersMenuOpen, setIsFiltersMenuOpen] = useState(false);
 
     return (
         <section className="bg-gray-800">

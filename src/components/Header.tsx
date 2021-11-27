@@ -7,14 +7,14 @@ export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <header className="bg-gray-900 ">
-            <div className="flex items-center justify-between px-4 py-3">
+        <header className="bg-gray-900 sm:flex sm:items-center sm:justify-between">
+            <div className="flex items-center justify-between px-4 py-5">
                 <div>
                     <img src={logoImg} alt="Logo" className="w-auto h-8" />
                 </div>
                 <button
                     type="button"
-                    className="p-2 text-gray-400 transition hover:text-white focus:outline-none focus:text-white"
+                    className="p-2 text-gray-400 transition hover:text-white focus:outline-none focus:text-white sm:hidden"
                     aria-label="Menu"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
@@ -26,11 +26,11 @@ export default function Header() {
                 </button>
             </div>
             <nav
-                className={`${
+                className={`sm:block ${
                     isMobileMenuOpen ? 'block' : 'hidden'
                 } text-white`}
             >
-                <div className="px-2 pt-2 pb-5 font-medium">
+                <div className="px-2 pt-2 pb-5 font-medium sm:py-0 sm:flex sm:items-center sm:px-5 sm:text-sm ">
                     <a
                         href="/"
                         className="block px-3 py-1 transition rounded-full hover:bg-gray-700 focus:bg-gray-700"
@@ -39,18 +39,27 @@ export default function Header() {
                     </a>
                     <a
                         href="/"
-                        className="block px-3 py-1 mt-3 transition rounded-full hover:bg-gray-700 focus:bg-gray-700"
+                        className="block px-3 py-1 mt-3 transition rounded-full sm:mt-0 hover:bg-gray-700 focus:bg-gray-700"
                     >
                         List your property
                     </a>
                     <a
                         href="/"
-                        className="block px-3 py-1 mt-3 transition rounded-full hover:bg-gray-700 focus:bg-gray-700"
+                        className="block px-3 py-1 mt-3 transition rounded-full sm:mt-0 hover:bg-gray-700 focus:bg-gray-700"
                     >
                         Contact
                     </a>
+                    <div className="hidden sm:block sm:ml-2">
+                        <button className="overflow-hidden border-4 border-gray-600 rounded-full hover:border-white ">
+                            <img
+                                src="https://avatars.githubusercontent.com/u/55157846?v=4"
+                                alt="Avatar"
+                                className="h-10 transition cover-center"
+                            />
+                        </button>
+                    </div>
                 </div>
-                <div className="p-5 border-t border-gray-600">
+                <div className="p-5 border-t border-gray-600 sm:hidden">
                     <div className="flex items-center">
                         <img
                             src="https://avatars.githubusercontent.com/u/55157846?v=4"
