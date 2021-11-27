@@ -91,21 +91,29 @@ export default function RentalList() {
     ]);
 
     return (
-        <main className="px-4 py-6">
-            <h2 className="hidden">Search results</h2>
-            <h3 className="text-xl font-semibold text-gray-800">Los Angeles</h3>
-            <p className="text-gray-600">
-                Live like the stars in these luxurious Southern California
-                estates.
-            </p>
-            <div className="mt-6 sm:flex">
-                {rentalList.map((rental, index) => (
-                    <RentalCard
-                        data={rental}
-                        key={index}
-                        className="sm:max-w-sm sm:w-full"
-                    />
-                ))}
+        <main className="py-6">
+            <div className="px-4 ">
+                <h2 className="hidden">Search results</h2>
+                <h3 className="text-xl font-semibold text-gray-800">
+                    Los Angeles
+                </h3>
+                <p className="text-gray-600">
+                    Live like the stars in these luxurious Southern California
+                    estates.
+                </p>
+            </div>
+            <div className="mt-6 sm:overflow-x-auto sm:pb-8">
+                <div className="px-4 sm:flex sm:-mx-2">
+                    {rentalList.map((rental, index) => (
+                        <RentalCard
+                            data={rental}
+                            key={index}
+                            className={`sm:mt-0 sm:max-w-sm sm:w-full sm:flex-shrink-0 sm:px-2 ${
+                                index > 0 && 'mt-10'
+                            }`}
+                        />
+                    ))}
+                </div>
             </div>
         </main>
     );
