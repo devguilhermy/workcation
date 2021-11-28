@@ -39,7 +39,7 @@ export default function Header({ className }: HeaderProps) {
                     isMobileMenuOpen ? 'block' : 'hidden'
                 } text-white xl:text-gray-800 sm:flex xl:flex-1 xl:justify-between xl:px-5 xl:items-center`}
             >
-                <div className="hidden xl:relative xl:flex-1 xl:block">
+                <div className="hidden xl:relative xl:max-w-lg xl:w-full xl:block">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                         <FiSearch className="w-6 h-6 text-gray-600" />
                     </div>

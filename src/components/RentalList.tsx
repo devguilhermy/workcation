@@ -1,5 +1,6 @@
 import RentalCard from './RentalCard';
 import { useState } from 'react';
+
 interface RentalListProps {
     className?: string;
 }
@@ -95,7 +96,7 @@ export default function RentalList({ className }: RentalListProps) {
             id: 5,
             title: 'Wooden house in the suburbs',
             area: 104,
-            bathroom_count: 3,
+            bathroom_count: 1,
             bedroom_count: 4,
             description: 'Technological house with aesthetic decoration.',
             weekly_price: 1300,

@@ -1,4 +1,5 @@
 import { BsFillStarFill } from 'react-icons/bs';
+import { priceFormatter } from '../utils/utils';
 
 interface RentalProps {
     data: {
@@ -40,8 +41,10 @@ export default function RentalCard({ data, className }: RentalProps) {
                             plus
                         </span>
                         <span className="ml-2 text-gray-600 uppercase">
-                            {data.bedroom_count} beds &bull;{' '}
-                            {data.bathroom_count} baths
+                            {data.bedroom_count}{' '}
+                            {data.bedroom_count === 1 ? 'bed' : 'beds'} &bull;{' '}
+                            {data.bathroom_count}{' '}
+                            {data.bathroom_count === 1 ? 'bath' : 'baths'}
                         </span>
                     </p>
                     <h4 className="mt-1 text-lg font-semibold truncate">
@@ -49,36 +52,23 @@ export default function RentalCard({ data, className }: RentalProps) {
                     </h4>
                     <p className="text-lg ">
                         <span className="text-gray-900">
-                            ${data.weekly_price}
+                            {priceFormatter(data.weekly_price)}
                         </span>
                         <span className="ml-1 text-sm text-gray-600">/ wk</span>
                     </p>
                     <p className="flex mt-2">
-                        <BsFillStarFill
-                            className={`${
-                                data.rating >= 1 ? 'inline' : 'hidden'
-                            } w-4 h-4 text-blue-500`}
-                        />
-                        <BsFillStarFill
-                            className={`${
-                                data.rating >= 2 ? 'inline' : 'hidden'
-                            } ml-0.5 w-4 h-4 text-blue-500`}
-                        />
-                        <BsFillStarFill
-                            className={`${
-                                data.rating >= 3 ? 'inline' : 'hidden'
-                            } ml-0.5 w-4 h-4 text-blue-500`}
-                        />
-                        <BsFillStarFill
-                            className={`${
-                                data.rating >= 4 ? 'inline' : 'hidden'
-                            } ml-0.5 w-4 h-4 text-blue-500`}
-                        />
-                        <BsFillStarFill
-                            className={`${
-                                data.rating === 5 ? 'inline' : 'hidden'
-                            } ml-0.5 w-4 h-4 text-blue-500`}
-                        />
+                        {[1, 2, 3, 4, 5].map((index) => {
+                            return (
+                                <BsFillStarFill
+                                    className={`${
+                                        data.rating >= index
+                                            ? 'text-blue-500'
+                                            : 'text-gray-300'
+                                    } w-4 h-4 ${index > 1 && 'ml-0.5'}`}
+                                    key={index}
+                                />
+                            );
+                        })}
                         <span className="ml-2 text-xs font-semibold text-gray-600 ">
                             {data.review_count} reviews
                         </span>
