@@ -11,7 +11,7 @@ export default function SearchBar({ className }: SearchBarProps) {
 
     return (
         <section className={`bg-gray-800 ${className}}`}>
-            <div className="flex justify-between p-5">
+            <div className="flex justify-between p-5 xl:hidden">
                 <div className="relative w-full max-w-sm">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                         <FiSearch className="w-6 h-6 text-gray-600" />
@@ -34,10 +34,14 @@ export default function SearchBar({ className }: SearchBarProps) {
                     <span className="ml-1 font-medium text-white">Filters</span>
                 </button>
             </div>
-            <form className={`${isFiltersMenuOpen ? 'block' : 'hidden'}`}>
-                <div className="border-gray-900 lg:flex lg:border-t">
+            <form
+                className={`${
+                    isFiltersMenuOpen ? 'block' : 'hidden'
+                }  xl:flex xl:flex-col xl:justify-between xl:h-full xl:w-72`}
+            >
+                <div className="border-gray-900 lg:flex xl:block lg:border-t xl:overflow-y-auto">
                     {/* FIRST FIELDSET */}
-                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:w-1/3">
+                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:w-1/3 xl:w-full xl:border-b">
                         <div className="flex flex-wrap">
                             <label className="block w-1/2 pr-2 sm:w-1/4 lg:w-1/2">
                                 <span className="text-sm text-gray-300">
@@ -69,7 +73,7 @@ export default function SearchBar({ className }: SearchBarProps) {
                         </div>
                     </fieldset>
                     {/* PROPERTY TYPE */}
-                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:border-l lg:w-1/4">
+                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:border-l lg:w-1/4 xl:w-full xl:border-b">
                         <span className="text-sm text-gray-300">
                             <legend>Property type</legend>
                         </span>
@@ -125,11 +129,11 @@ export default function SearchBar({ className }: SearchBarProps) {
                         </div>
                     </fieldset>
                     {/* AMENITIES */}
-                    <fieldset className="p-5 border-t border-gray-900 sm:pb-8 lg:border-t-0 lg:border-l lg:pb-5 lg:w-2/3">
+                    <fieldset className="p-5 border-t border-gray-900 sm:pb-8 lg:border-t-0 lg:border-l lg:pb-5 lg:w-2/3 xl:w-full xl:border-b">
                         <span className="text-sm text-gray-300">
                             <legend>Amenities</legend>
                         </span>
-                        <div className="grid grid-cols-2 sm:grid-cols-4 sm:gap-3 lg:grid-cols-2 lg:gap-0">
+                        <div className="grid grid-cols-2 sm:grid-cols-4 sm:gap-3 lg:grid-cols-2 lg:gap-0 xl:grid-cols-1">
                             <label className="flex items-center mt-3">
                                 <input
                                     type="checkbox"
@@ -224,7 +228,7 @@ export default function SearchBar({ className }: SearchBarProps) {
                 <div className="p-5 bg-gray-900">
                     <button
                         type="submit"
-                        className="block w-full px-4 py-2 ml-auto font-semibold text-white bg-blue-700 rounded-lg sm:w-auto hover:bg-blue-600"
+                        className="block w-full px-4 py-2 ml-auto font-semibold text-white bg-blue-700 rounded-lg sm:w-auto xl:w-full hover:bg-blue-600"
                     >
                         Filter results
                     </button>

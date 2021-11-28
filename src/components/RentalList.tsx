@@ -115,7 +115,7 @@ export default function RentalList({ className }: RentalListProps) {
     ]);
 
     return (
-        <main className={`py-6 ${className}`}>
+        <main className={`py-6 ${className} overflow-x-auto`}>
             <div className="px-5">
                 <h2 className="hidden">Search results</h2>
                 <h3 className="text-xl font-semibold text-gray-800">
