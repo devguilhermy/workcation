@@ -127,15 +127,15 @@ export default function RentalList({ className }: RentalListProps) {
                     estates.
                 </p>
             </div>
-            <div className="mt-6 sm:overflow-x-auto sm:pb-8">
-                <div className="px-5 sm:inline-flex ">
+            <div className="pt-6 sm:overflow-x-auto sm:pb-8">
+                <div className="px-5 sm:grid sm:grid-cols-2 sm:gap-x-4 sm:gap-y-6 lg:grid-cols-3 ">
                     {rentalList.map((rental, index) => (
                         <RentalCard
                             data={rental}
-                            key={index}
-                            className={` sm:w-80 sm:flex-shrink-0 ${
-                                index > 0 && 'mt-10 sm:mt-0 sm:pl-3'
-                            }`}
+                            key={rental.id}
+                            className={
+                                ' sm:w-72 lg:w-80 xl:w-88 sm:flex-shrink-0'
+                            }
                         />
                     ))}
                 </div>

@@ -8,7 +8,7 @@ export default function App() {
             <Header className="xl:flex-shrink-0" />
             <div className="xl:flex xl:flex-1 xl:overflow-y-hidden">
                 <SearchBar className="xl:w-72" />
-                <RentalList className="" />
+                <RentalList className="xl:w-full" />
             </div>
         </div>
     );

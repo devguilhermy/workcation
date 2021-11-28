@@ -39,9 +39,9 @@ export default function SearchBar({ className }: SearchBarProps) {
                     isFiltersMenuOpen ? 'block' : 'hidden'
                 }  xl:flex xl:flex-col xl:justify-between xl:h-full xl:w-72`}
             >
-                <div className="border-gray-900 lg:flex xl:block lg:border-t xl:overflow-y-auto">
+                <div className="border-gray-900 lg:flex xl:block lg:border-t xl:overflow-y-auto xl:border-t-0">
                     {/* FIRST FIELDSET */}
-                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:w-1/3 xl:w-full xl:border-b">
+                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:w-1/3 xl:w-full">
                         <div className="flex flex-wrap">
                             <label className="block w-1/2 pr-2 sm:w-1/4 lg:w-1/2">
                                 <span className="text-sm text-gray-300">
@@ -73,7 +73,7 @@ export default function SearchBar({ className }: SearchBarProps) {
                         </div>
                     </fieldset>
                     {/* PROPERTY TYPE */}
-                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:border-l lg:w-1/4 xl:w-full xl:border-b">
+                    <fieldset className="p-5 border-t border-gray-900 lg:border-t-0 lg:border-l lg:w-1/4 xl:w-full xl:border-t xl:border-l-0">
                         <span className="text-sm text-gray-300">
                             <legend>Property type</legend>
                         </span>
@@ -129,7 +129,7 @@ export default function SearchBar({ className }: SearchBarProps) {
                         </div>
                     </fieldset>
                     {/* AMENITIES */}
-                    <fieldset className="p-5 border-t border-gray-900 sm:pb-8 lg:border-t-0 lg:border-l lg:pb-5 lg:w-2/3 xl:w-full xl:border-b">
+                    <fieldset className="p-5 border-t border-gray-900 sm:pb-8 lg:border-t-0 lg:border-l lg:pb-5 lg:w-2/3 xl:w-full xl:border-t xl:border-l-0">
                         <span className="text-sm text-gray-300">
                             <legend>Amenities</legend>
                         </span>
