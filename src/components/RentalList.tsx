@@ -1,7 +1,10 @@
 import RentalCard from './RentalCard';
 import { useState } from 'react';
+interface RentalListProps {
+    className?: string;
+}
 
-export default function RentalList() {
+export default function RentalList({ className }: RentalListProps) {
     const [rentalList] = useState([
         {
             id: 1,
@@ -88,11 +91,32 @@ export default function RentalList() {
             is_new: true,
             is_premium: false,
         },
+        {
+            id: 5,
+            title: 'Wooden house in the suburbs',
+            area: 104,
+            bathroom_count: 3,
+            bedroom_count: 4,
+            description: 'Technological house with aesthetic decoration.',
+            weekly_price: 1300,
+            location: {
+                address: '3 Marblehead, Massachusets',
+                latitude: 12.933392,
+                longitude: -37.646569,
+            },
+            pictures: [
+                'https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80',
+            ],
+            rating: 3,
+            review_count: 12,
+            is_new: true,
+            is_premium: false,
+        },
     ]);
 
     return (
-        <main className="py-6">
-            <div className="px-4 ">
+        <main className={`py-6 ${className}`}>
+            <div className="px-5">
                 <h2 className="hidden">Search results</h2>
                 <h3 className="text-xl font-semibold text-gray-800">
                     Los Angeles
@@ -103,13 +127,13 @@ export default function RentalList() {
                 </p>
             </div>
             <div className="mt-6 sm:overflow-x-auto sm:pb-8">
-                <div className="px-4 sm:flex sm:-mx-2">
+                <div className="px-5 sm:inline-flex ">
                     {rentalList.map((rental, index) => (
                         <RentalCard
                             data={rental}
                             key={index}
-                            className={`sm:mt-0 sm:max-w-sm sm:w-full sm:flex-shrink-0 sm:px-2 ${
-                                index > 0 && 'mt-10'
+                            className={` sm:w-80 sm:flex-shrink-0 ${
+                                index > 0 && 'mt-10 sm:mt-0 sm:pl-3'
                             }`}
                         />
                     ))}

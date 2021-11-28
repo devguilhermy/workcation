@@ -6,8 +6,10 @@ export default function App() {
     return (
         <div className="min-h-screen antialiased bg-gray-200">
             <Header />
-            <SearchBar />
-            <RentalList />
+            <div className="">
+                <SearchBar className="" />
+                <RentalList className="" />
+            </div>
         </div>
     );
 }
