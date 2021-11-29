@@ -1,8 +1,9 @@
 import { FiMenu, FiSearch } from 'react-icons/fi';
+import { useEffect, useState } from 'react';
 
 import { CgClose } from 'react-icons/cg';
+import Dropdown from './Dropdown';
 import logoImg from '../assets/img/logo.svg';
-import { useState } from 'react';
 
 interface HeaderProps {
     className?: string;
@@ -69,46 +70,48 @@ export default function Header({ className }: HeaderProps) {
                         >
                             Contact
                         </a>
-                        <div className="hidden sm:block sm:ml-2">
-                            <button className="overflow-hidden transition border-4 border-gray-600 rounded-full hover:border-white xl:border-gray-300 xl:hover:border-gray-600">
+                        <div className="relative px-3 py-3 mt-3 border-t border-gray-600 sm:p-0 sm:border-0 sm:mt-0 sm:ml-3">
+                            <div className="relative flex items-center sm:hidden">
                                 <img
                                     src="https://avatars.githubusercontent.com/u/55157846?v=4"
                                     alt="Avatar"
-                                    className="h-10 transition cover-center"
+                                    className="h-12 transition border-4 border-gray-600 rounded-full hover:border-white cover-center"
                                 />
-                            </button>
-                        </div>
-                    </div>
-                    <div className="p-5 border-t border-gray-600 sm:hidden">
-                        <div className="flex items-center">
-                            <img
-                                src="https://avatars.githubusercontent.com/u/55157846?v=4"
-                                alt="Avatar"
-                                className="h-12 transition border-4 border-gray-600 rounded-full hover:border-white cover-center"
+                                <span className="ml-2 font-semibold sm:hidden">
+                                    Dev Guilhermy
+                                </span>
+                            </div>
+                            <Dropdown
+                                trigger={
+                                    <img
+                                        src="https://avatars.githubusercontent.com/u/55157846?v=4"
+                                        alt="Avatar"
+                                        className="w-full h-full cover-center"
+                                    />
+                                }
+                                items={
+                                    <>
+                                        <a
+                                            href="/"
+                                            className="block sm:border-b hover:text-white focus:text-white sm:py-2 sm:px-4 sm:hover:bg-gray-600"
+                                        >
+                                            Account
+                                        </a>
+                                        <a
+                                            href="/"
+                                            className="block mt-2 sm:border-b hover:text-white focus:text-white sm:py-2 sm:mt-0 sm:hover:bg-gray-600 sm:px-4"
+                                        >
+                                            My listings
+                                        </a>
+                                        <a
+                                            href="/"
+                                            className="block mt-2 hover:text-white focus:text-white sm:py-2 sm:mt-0 sm:hover:bg-gray-600 sm:px-4"
+                                        >
+                                            Sign out
+                                        </a>
+                                    </>
+                                }
                             />
-                            <span className="ml-2 font-semibold">
-                                Dev Guilhermy
-                            </span>
-                        </div>
-                        <div className="py-2 mt-2 text-gray-400 ">
-                            <a
-                                href="/"
-                                className="block hover:text-white focus:text-white"
-                            >
-                                Account
-                            </a>
-                            <a
-                                href="/"
-                                className="block mt-2 hover:text-white focus:text-white"
-                            >
-                                My listings
-                            </a>
-                            <a
-                                href="/"
-                                className="block mt-2 hover:text-white focus:text-white"
-                            >
-                                Sign out
-                            </a>
                         </div>
                     </div>
                 </div>

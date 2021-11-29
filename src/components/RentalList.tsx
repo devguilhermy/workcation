@@ -133,9 +133,7 @@ export default function RentalList({ className }: RentalListProps) {
                         <RentalCard
                             data={rental}
                             key={rental.id}
-                            className={
-                                ' sm:w-72 lg:w-80 xl:w-88 sm:flex-shrink-0'
-                            }
+                            className={' sm:w-72 lg:w-80 sm:flex-shrink-0'}
                         />
                     ))}
                 </div>
