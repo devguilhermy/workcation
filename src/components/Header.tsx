@@ -1,9 +1,9 @@
 import { FiMenu, FiSearch } from 'react-icons/fi';
-import { useEffect, useState } from 'react';
 
 import { CgClose } from 'react-icons/cg';
 import Dropdown from './Dropdown';
 import logoImg from '../assets/img/logo.svg';
+import { useState } from 'react';
 
 interface HeaderProps {
     className?: string;
@@ -71,45 +71,70 @@ export default function Header({ className }: HeaderProps) {
                             Contact
                         </a>
                         <div className="relative px-3 py-3 mt-3 border-t border-gray-600 sm:p-0 sm:border-0 sm:mt-0 sm:ml-3">
-                            <div className="relative flex items-center sm:hidden">
-                                <img
-                                    src="https://avatars.githubusercontent.com/u/55157846?v=4"
-                                    alt="Avatar"
-                                    className="h-12 transition border-4 border-gray-600 rounded-full hover:border-white cover-center"
-                                />
-                                <span className="ml-2 font-semibold sm:hidden">
-                                    Dev Guilhermy
-                                </span>
-                            </div>
-                            <Dropdown
-                                trigger={
+                            <div className="sm:hidden">
+                                <div className="flex items-center ">
                                     <img
                                         src="https://avatars.githubusercontent.com/u/55157846?v=4"
                                         alt="Avatar"
-                                        className="w-full h-full cover-center"
+                                        className="h-12 transition border-4 border-gray-600 rounded-full hover:border-white cover-center"
                                     />
+                                    <span className="ml-2 font-semibold sm:hidden">
+                                        Dev Guilhermy
+                                    </span>
+                                </div>
+                                <div className="py-2 mt-2 text-gray-400 sm:hidden">
+                                    <a
+                                        href="/"
+                                        className="block sm:border-b hover:text-white focus:text-white "
+                                    >
+                                        Account
+                                    </a>
+                                    <a
+                                        href="/"
+                                        className="block mt-2 sm:border-b hover:text-white focus:text-white "
+                                    >
+                                        My listings
+                                    </a>
+                                    <a
+                                        href="/"
+                                        className="block mt-2 hover:text-white focus:text-white"
+                                    >
+                                        Sign out
+                                    </a>
+                                </div>
+                            </div>
+                            <Dropdown
+                                className="hidden sm:block"
+                                trigger={
+                                    <span className="relative block w-10 h-10 overflow-hidden transition border-4 border-gray-600 rounded-full hover:border-white focus:border-white xl:border-gray-200 xl:hover:border-gray-400 xl:focus:border-gray-400">
+                                        <img
+                                            src="https://avatars.githubusercontent.com/u/55157846?v=4"
+                                            alt="Avatar"
+                                            className="w-full h-full cover-center"
+                                        />
+                                    </span>
                                 }
                                 items={
-                                    <>
+                                    <div className="w-48 py-0 mt-2 overflow-hidden text-base text-gray-800 bg-white rounded-lg shadow-xl">
                                         <a
                                             href="/"
-                                            className="block sm:border-b hover:text-white focus:text-white sm:py-2 sm:px-4 sm:hover:bg-gray-600"
+                                            className="block px-4 py-2 border-b hover:text-white focus:text-white hover:bg-gray-600 focus:bg-gray-600"
                                         >
                                             Account
                                         </a>
                                         <a
                                             href="/"
-                                            className="block mt-2 sm:border-b hover:text-white focus:text-white sm:py-2 sm:mt-0 sm:hover:bg-gray-600 sm:px-4"
+                                            className="block px-4 py-2 border-b hover:text-white focus:text-white hover:bg-gray-600 focus:bg-gray-600"
                                         >
                                             My listings
                                         </a>
                                         <a
                                             href="/"
-                                            className="block mt-2 hover:text-white focus:text-white sm:py-2 sm:mt-0 sm:hover:bg-gray-600 sm:px-4"
+                                            className="block px-4 py-2 hover:text-white focus:text-white hover:bg-gray-600 focus:bg-gray-600"
                                         >
                                             Sign out
                                         </a>
-                                    </>
+                                    </div>
                                 }
                             />
                         </div>
