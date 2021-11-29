@@ -56,19 +56,19 @@ export default function Header({ className }: HeaderProps) {
                             href="/"
                             className="block px-3 py-1 transition rounded-full hover:bg-gray-700 xl:hover:bg-gray-200 xl:focus:bg-gray-200 focus:bg-gray-700"
                         >
+                            Home
+                        </a>
+                        <a
+                            href="/listings"
+                            className="block px-3 py-1 mt-3 transition rounded-full sm:mt-0 sm:ml-3 hover:bg-gray-700 xl:hover:bg-gray-200 xl:focus:bg-gray-200 focus:bg-gray-700"
+                        >
                             Listings
                         </a>
                         <a
                             href="/"
-                            className="block px-3 py-1 mt-3 transition rounded-full sm:mt-0 hover:bg-gray-700 xl:hover:bg-gray-200 xl:focus:bg-gray-200 focus:bg-gray-700"
+                            className="block px-3 py-1 mt-3 transition rounded-full sm:mt-0 sm:ml-3 hover:bg-gray-700 xl:hover:bg-gray-200 xl:focus:bg-gray-200 focus:bg-gray-700"
                         >
                             List your property
-                        </a>
-                        <a
-                            href="/"
-                            className="block px-3 py-1 mt-3 transition rounded-full sm:mt-0 hover:bg-gray-700 xl:hover:bg-gray-200 xl:focus:bg-gray-200 focus:bg-gray-700"
-                        >
-                            Contact
                         </a>
                         <div className="relative px-3 py-3 mt-3 border-t border-gray-600 sm:p-0 sm:border-0 sm:mt-0 sm:ml-3">
                             <div className="sm:hidden">
