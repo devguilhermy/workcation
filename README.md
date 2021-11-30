@@ -7,16 +7,19 @@
 ### TODO
 
 #### Features
+
 -   [ ] Property search and filtering
 -   [ ] Carousel functionality for listings
 -   [ ] Page for specific properties
 -   [ ] Carousel with the pictures of a single property
 -   [ ] Show property location on map
+-   [ ] Show property description
 -   [ ] Slider for price range selection
 -   [ ] API Requests
 
 #### Style
 
+-   [ ] Dark mode
 -   [ ] Make custom scrollbar
 
 ### BUGS
