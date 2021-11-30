@@ -22069,6 +22069,14 @@ select {
   padding: 0.875rem;
 }
 
+.p-1\/2 {
+  padding: 50%;
+}
+
+.p-3\/4 {
+  padding: 75%;
+}
+
 .p-5\/6 {
   padding: 83.333333%;
 }
@@ -22251,6 +22259,16 @@ select {
 .px-3\.5 {
   padding-left: 0.875rem;
   padding-right: 0.875rem;
+}
+
+.px-1\/2 {
+  padding-left: 50%;
+  padding-right: 50%;
+}
+
+.px-3\/4 {
+  padding-left: 75%;
+  padding-right: 75%;
 }
 
 .px-5\/6 {
@@ -22438,6 +22456,16 @@ select {
   padding-bottom: 0.875rem;
 }
 
+.py-1\/2 {
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+.py-3\/4 {
+  padding-top: 75%;
+  padding-bottom: 75%;
+}
+
 .py-5\/6 {
   padding-top: 83.333333%;
   padding-bottom: 83.333333%;
@@ -22585,6 +22613,14 @@ select {
 
 .pt-3\.5 {
   padding-top: 0.875rem;
+}
+
+.pt-1\/2 {
+  padding-top: 50%;
+}
+
+.pt-3\/4 {
+  padding-top: 75%;
 }
 
 .pt-5\/6 {
@@ -22735,6 +22771,14 @@ select {
   padding-right: 0.875rem;
 }
 
+.pr-1\/2 {
+  padding-right: 50%;
+}
+
+.pr-3\/4 {
+  padding-right: 75%;
+}
+
 .pr-5\/6 {
   padding-right: 83.333333%;
 }
@@ -22883,6 +22927,14 @@ select {
   padding-bottom: 0.875rem;
 }
 
+.pb-1\/2 {
+  padding-bottom: 50%;
+}
+
+.pb-3\/4 {
+  padding-bottom: 75%;
+}
+
 .pb-5\/6 {
   padding-bottom: 83.333333%;
 }
@@ -23029,6 +23081,14 @@ select {
 
 .pl-3\.5 {
   padding-left: 0.875rem;
+}
+
+.pl-1\/2 {
+  padding-left: 50%;
+}
+
+.pl-3\/4 {
+  padding-left: 75%;
 }
 
 .pl-5\/6 {
@@ -52433,6 +52493,14 @@ select {
     padding: 0.875rem;
   }
 
+  .sm\:p-1\/2 {
+    padding: 50%;
+  }
+
+  .sm\:p-3\/4 {
+    padding: 75%;
+  }
+
   .sm\:p-5\/6 {
     padding: 83.333333%;
   }
@@ -52615,6 +52683,16 @@ select {
   .sm\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .sm\:px-1\/2 {
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  .sm\:px-3\/4 {
+    padding-left: 75%;
+    padding-right: 75%;
   }
 
   .sm\:px-5\/6 {
@@ -52802,6 +52880,16 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .sm\:py-1\/2 {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .sm\:py-3\/4 {
+    padding-top: 75%;
+    padding-bottom: 75%;
+  }
+
   .sm\:py-5\/6 {
     padding-top: 83.333333%;
     padding-bottom: 83.333333%;
@@ -52949,6 +53037,14 @@ select {
 
   .sm\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .sm\:pt-1\/2 {
+    padding-top: 50%;
+  }
+
+  .sm\:pt-3\/4 {
+    padding-top: 75%;
   }
 
   .sm\:pt-5\/6 {
@@ -53099,6 +53195,14 @@ select {
     padding-right: 0.875rem;
   }
 
+  .sm\:pr-1\/2 {
+    padding-right: 50%;
+  }
+
+  .sm\:pr-3\/4 {
+    padding-right: 75%;
+  }
+
   .sm\:pr-5\/6 {
     padding-right: 83.333333%;
   }
@@ -53247,6 +53351,14 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .sm\:pb-1\/2 {
+    padding-bottom: 50%;
+  }
+
+  .sm\:pb-3\/4 {
+    padding-bottom: 75%;
+  }
+
   .sm\:pb-5\/6 {
     padding-bottom: 83.333333%;
   }
@@ -53393,6 +53505,14 @@ select {
 
   .sm\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .sm\:pl-1\/2 {
+    padding-left: 50%;
+  }
+
+  .sm\:pl-3\/4 {
+    padding-left: 75%;
   }
 
   .sm\:pl-5\/6 {
@@ -82785,6 +82905,14 @@ select {
     padding: 0.875rem;
   }
 
+  .md\:p-1\/2 {
+    padding: 50%;
+  }
+
+  .md\:p-3\/4 {
+    padding: 75%;
+  }
+
   .md\:p-5\/6 {
     padding: 83.333333%;
   }
@@ -82967,6 +83095,16 @@ select {
   .md\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .md\:px-1\/2 {
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  .md\:px-3\/4 {
+    padding-left: 75%;
+    padding-right: 75%;
   }
 
   .md\:px-5\/6 {
@@ -83154,6 +83292,16 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .md\:py-1\/2 {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .md\:py-3\/4 {
+    padding-top: 75%;
+    padding-bottom: 75%;
+  }
+
   .md\:py-5\/6 {
     padding-top: 83.333333%;
     padding-bottom: 83.333333%;
@@ -83301,6 +83449,14 @@ select {
 
   .md\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .md\:pt-1\/2 {
+    padding-top: 50%;
+  }
+
+  .md\:pt-3\/4 {
+    padding-top: 75%;
   }
 
   .md\:pt-5\/6 {
@@ -83451,6 +83607,14 @@ select {
     padding-right: 0.875rem;
   }
 
+  .md\:pr-1\/2 {
+    padding-right: 50%;
+  }
+
+  .md\:pr-3\/4 {
+    padding-right: 75%;
+  }
+
   .md\:pr-5\/6 {
     padding-right: 83.333333%;
   }
@@ -83599,6 +83763,14 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .md\:pb-1\/2 {
+    padding-bottom: 50%;
+  }
+
+  .md\:pb-3\/4 {
+    padding-bottom: 75%;
+  }
+
   .md\:pb-5\/6 {
     padding-bottom: 83.333333%;
   }
@@ -83745,6 +83917,14 @@ select {
 
   .md\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .md\:pl-1\/2 {
+    padding-left: 50%;
+  }
+
+  .md\:pl-3\/4 {
+    padding-left: 75%;
   }
 
   .md\:pl-5\/6 {
@@ -113137,6 +113317,14 @@ select {
     padding: 0.875rem;
   }
 
+  .lg\:p-1\/2 {
+    padding: 50%;
+  }
+
+  .lg\:p-3\/4 {
+    padding: 75%;
+  }
+
   .lg\:p-5\/6 {
     padding: 83.333333%;
   }
@@ -113319,6 +113507,16 @@ select {
   .lg\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .lg\:px-1\/2 {
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  .lg\:px-3\/4 {
+    padding-left: 75%;
+    padding-right: 75%;
   }
 
   .lg\:px-5\/6 {
@@ -113506,6 +113704,16 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .lg\:py-1\/2 {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .lg\:py-3\/4 {
+    padding-top: 75%;
+    padding-bottom: 75%;
+  }
+
   .lg\:py-5\/6 {
     padding-top: 83.333333%;
     padding-bottom: 83.333333%;
@@ -113653,6 +113861,14 @@ select {
 
   .lg\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .lg\:pt-1\/2 {
+    padding-top: 50%;
+  }
+
+  .lg\:pt-3\/4 {
+    padding-top: 75%;
   }
 
   .lg\:pt-5\/6 {
@@ -113803,6 +114019,14 @@ select {
     padding-right: 0.875rem;
   }
 
+  .lg\:pr-1\/2 {
+    padding-right: 50%;
+  }
+
+  .lg\:pr-3\/4 {
+    padding-right: 75%;
+  }
+
   .lg\:pr-5\/6 {
     padding-right: 83.333333%;
   }
@@ -113951,6 +114175,14 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .lg\:pb-1\/2 {
+    padding-bottom: 50%;
+  }
+
+  .lg\:pb-3\/4 {
+    padding-bottom: 75%;
+  }
+
   .lg\:pb-5\/6 {
     padding-bottom: 83.333333%;
   }
@@ -114097,6 +114329,14 @@ select {
 
   .lg\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .lg\:pl-1\/2 {
+    padding-left: 50%;
+  }
+
+  .lg\:pl-3\/4 {
+    padding-left: 75%;
   }
 
   .lg\:pl-5\/6 {
@@ -143489,6 +143729,14 @@ select {
     padding: 0.875rem;
   }
 
+  .xl\:p-1\/2 {
+    padding: 50%;
+  }
+
+  .xl\:p-3\/4 {
+    padding: 75%;
+  }
+
   .xl\:p-5\/6 {
     padding: 83.333333%;
   }
@@ -143671,6 +143919,16 @@ select {
   .xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .xl\:px-1\/2 {
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  .xl\:px-3\/4 {
+    padding-left: 75%;
+    padding-right: 75%;
   }
 
   .xl\:px-5\/6 {
@@ -143858,6 +144116,16 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .xl\:py-1\/2 {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .xl\:py-3\/4 {
+    padding-top: 75%;
+    padding-bottom: 75%;
+  }
+
   .xl\:py-5\/6 {
     padding-top: 83.333333%;
     padding-bottom: 83.333333%;
@@ -144005,6 +144273,14 @@ select {
 
   .xl\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .xl\:pt-1\/2 {
+    padding-top: 50%;
+  }
+
+  .xl\:pt-3\/4 {
+    padding-top: 75%;
   }
 
   .xl\:pt-5\/6 {
@@ -144155,6 +144431,14 @@ select {
     padding-right: 0.875rem;
   }
 
+  .xl\:pr-1\/2 {
+    padding-right: 50%;
+  }
+
+  .xl\:pr-3\/4 {
+    padding-right: 75%;
+  }
+
   .xl\:pr-5\/6 {
     padding-right: 83.333333%;
   }
@@ -144303,6 +144587,14 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .xl\:pb-1\/2 {
+    padding-bottom: 50%;
+  }
+
+  .xl\:pb-3\/4 {
+    padding-bottom: 75%;
+  }
+
   .xl\:pb-5\/6 {
     padding-bottom: 83.333333%;
   }
@@ -144449,6 +144741,14 @@ select {
 
   .xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .xl\:pl-1\/2 {
+    padding-left: 50%;
+  }
+
+  .xl\:pl-3\/4 {
+    padding-left: 75%;
   }
 
   .xl\:pl-5\/6 {
@@ -173841,6 +174141,14 @@ select {
     padding: 0.875rem;
   }
 
+  .\32xl\:p-1\/2 {
+    padding: 50%;
+  }
+
+  .\32xl\:p-3\/4 {
+    padding: 75%;
+  }
+
   .\32xl\:p-5\/6 {
     padding: 83.333333%;
   }
@@ -174023,6 +174331,16 @@ select {
   .\32xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .\32xl\:px-1\/2 {
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  .\32xl\:px-3\/4 {
+    padding-left: 75%;
+    padding-right: 75%;
   }
 
   .\32xl\:px-5\/6 {
@@ -174210,6 +174528,16 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .\32xl\:py-1\/2 {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .\32xl\:py-3\/4 {
+    padding-top: 75%;
+    padding-bottom: 75%;
+  }
+
   .\32xl\:py-5\/6 {
     padding-top: 83.333333%;
     padding-bottom: 83.333333%;
@@ -174357,6 +174685,14 @@ select {
 
   .\32xl\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .\32xl\:pt-1\/2 {
+    padding-top: 50%;
+  }
+
+  .\32xl\:pt-3\/4 {
+    padding-top: 75%;
   }
 
   .\32xl\:pt-5\/6 {
@@ -174507,6 +174843,14 @@ select {
     padding-right: 0.875rem;
   }
 
+  .\32xl\:pr-1\/2 {
+    padding-right: 50%;
+  }
+
+  .\32xl\:pr-3\/4 {
+    padding-right: 75%;
+  }
+
   .\32xl\:pr-5\/6 {
     padding-right: 83.333333%;
   }
@@ -174655,6 +174999,14 @@ select {
     padding-bottom: 0.875rem;
   }
 
+  .\32xl\:pb-1\/2 {
+    padding-bottom: 50%;
+  }
+
+  .\32xl\:pb-3\/4 {
+    padding-bottom: 75%;
+  }
+
   .\32xl\:pb-5\/6 {
     padding-bottom: 83.333333%;
   }
@@ -174801,6 +175153,14 @@ select {
 
   .\32xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .\32xl\:pl-1\/2 {
+    padding-left: 50%;
+  }
+
+  .\32xl\:pl-3\/4 {
+    padding-left: 75%;
   }
 
   .\32xl\:pl-5\/6 {

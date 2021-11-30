@@ -6,6 +6,8 @@ module.exports = {
     theme: {
         extend: {
             padding: {
+                '1/2': '50%',
+                '3/4': '75%',
                 '5/6': '83.333333%',
             },
             spacing: {

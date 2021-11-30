@@ -3,6 +3,7 @@ import { FiMenu, FiSearch } from 'react-icons/fi';
 import { CgClose } from 'react-icons/cg';
 import Dropdown from './Dropdown';
 import logoImg from '../assets/img/logo.svg';
+import logoImgDark from '../assets/img/logo-dark.svg';
 import { useState } from 'react';
 
 interface HeaderProps {
@@ -16,9 +17,18 @@ export default function Header({ className }: HeaderProps) {
         <header
             className={`bg-gray-900 xl:bg-white sm:flex sm:items-center sm:justify-between ${className}`}
         >
-            <div className="flex items-center justify-between px-4 py-3 sm:py-4 xl:py-5 xl:w-72 xl:bg-gray-900 xl:justify-center">
+            <div className="flex items-center justify-between px-4 py-3 sm:py-4 xl:py-5 xl:w-72 xl:justify-center">
                 <div className="">
-                    <img src={logoImg} alt="Logo" className="w-auto h-8" />
+                    <img
+                        src={logoImg}
+                        alt="Logo"
+                        className="w-auto h-8 xl:hidden"
+                    />
+                    <img
+                        src={logoImgDark}
+                        alt="Logo"
+                        className="hidden w-auto h-8 xl:inline"
+                    />
                 </div>
                 <div className="sm:hidden">
                     <button
